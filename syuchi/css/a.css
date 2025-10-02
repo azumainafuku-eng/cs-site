@@ -1,0 +1,254 @@
+body {
+height: 100%;
+margin: 20px 20px 0px 20px;
+font-family: meiryo;
+font-size: 12px;
+font-weight: 700;
+}
+
+pre {
+font-family: meiryo;
+font-weight: 700;
+font-size: 12px;
+}
+
+
+
+table.table1 {
+width: 100%;
+border-collapse:collapse;
+}
+
+
+
+table.table1 td {
+background: #f0f8ff;
+padding: 0px 0px 10px 10px;
+color: #696969;
+border-color: white;
+border-style: solid;
+}
+
+table.table1 a {
+text-decoration: none;
+}
+
+table.table1 a:link {
+color: #ffa500;
+}
+
+table.table1 a:visited { 
+color: #68a4d9;
+}
+
+table.table1 a:hover {
+color: #dc143c;
+}
+
+table.table1 td.ff {
+background: #fff;
+padding: 0px 0px 0px 10px;
+}
+
+.copy {
+font-family: mairyo;
+font-weight: bold;
+color: #f39800;
+white-space : pre;
+margin: 1em 0 0 0;
+transition: all 2s;  /* 2秒かけて背景色を元に戻す */
+background-color:;  /* 元の背景色 */
+cursor: grabbing;
+}
+
+.copy.highlight {
+background-color:;  /* ピカッてした時の背景色 */
+color: #c82c55;
+transition-duration: 0s; /* 即座に背景色を変える */
+}
+
+a:link{ color: #4169e1;text-decoration: none; }/* 通常 */
+a:visited { color: #898880;text-decoration: none; }/* 押した後 */
+a:hover { color: #c82c55;text-decoration: none; } /* オンマウス時 */
+
+.midasi {
+background-color:;/*背景の色*/
+color:#b8860b;/*文字の色*/
+font-size:12pt;/*文字の大きさ*/
+text-align:;/*文字の位置*/
+margin:0px 0px 0px 0px;/*見出しの幅（高さ幅）*/
+padding:5px;/*見出し文字と枠の間の高さ*/
+border-style:;/*枠線の種類*/
+border-color:blue;/*枠線の色*/
+border-width:5px;/*枠線の太さ*/
+font-family:meiryo;
+font-weight:900;
+}
+
+
+.hiduke {
+background-color:;/*背景の色*/
+color:#696969;/*文字の色*/
+font-size:11pt;/*文字の大きさ*/
+text-align:;/*文字の位置*/
+margin:0px 0px 20px 0px;/*見出しの幅（高さ幅）*/
+padding:0px;/*見出し文字と枠の間の高さ*/
+border-style:;/*枠線の種類*/
+border-color:blue;/*枠線の色*/
+border-width:5px;/*枠線の太さ*/
+font-family:meiryo;
+font-weight:900;
+}
+
+
+
+
+
+/* 点滅 */
+.a{
+-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+-moz-animation:blink 1.5s ease-in-out infinite alternate;
+animation:blink 1.5s ease-in-out infinite alternate;
+color: red;
+font-size: 20px;
+}
+@-webkit-keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-moz-keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+
+
+}
+
+
+input {
+font-size: 13px;
+font-weight:900;
+font-family: Meiryo;
+border:solid 1px #ccc;
+
+border-radius: 5px;
+padding:7px 14px;
+margin-bottom:10px;
+
+}
+
+
+input:focus {
+
+outline:none;
+border-color:#aaa;
+}
+
+
+.flat.border {
+position: relative;
+text-align: center; /* 中央揃え */
+margin: 5px 5px 5px 5px;
+width: 10%;/* 幅の指定 */
+padding: 5px;
+background: linear-gradient(135deg, #ffd900, #ff9300);/* 色の指定 */
+color: #fff;
+font-weight: bold;
+border-radius: 8px;
+transition: 0.3s;
+border: 2px solid #ea5550;
+background: #fff;
+color: #ea5550;
+}
+
+.flat.border:hover {
+background: #ea5550;
+color: #fff;
+}
+.flat.border:active, .flat.border:focus {
+top: 2px;
+}
+
+
+
+
+
+#page-top {
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+    font-size: 77%;
+   font-family:メイリオ;
+   z-index: 1;
+}
+#page-top a {
+    background: rgba(234,85,80,0.5);
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: rgba(234,85,80,0.9);
+}
+
+
+
+
+.button {
+border-bottom: dashed 1px #555;
+display: inline-block;
+cursor: help;
+}
+
+
+.pop_up {
+width: 700px;
+margin: -66em 5px 5px 5px;
+background-color:rgba(255,255,255,0.95);
+position: absolute;
+left: 200px;
+padding: 20px 20px;
+border: 4px double red;
+box-shadow: 2px 2px 5px 1px #999;
+color: #000;
+font-family: meiryo;
+font-size: 14px;
+display: none;
+}
+
+
+
+
+
+
+
+
+/*2017nenderiyou*/
+.button {
+border-bottom: dashed 1px #555;
+display: inline-block;
+cursor: help;
+}
+
+
+.pop {
+width: 750px;
+background-color:rgba(255,255,255,0.95);
+position: absolute;
+padding: 20px 20px;
+border: 4px double red;
+box-shadow: 2px 2px 5px 1px #999;
+color: #000;
+font-family: meiryo;
+font-size: 14px;
+display: none;
+}
+/*2017nenderiyou*/
