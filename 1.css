@@ -1,0 +1,430 @@
+html, body {
+
+height: 0;
+font-weight: bold;
+margin: 5px 10px 0px 5px;
+}
+
+/* 点滅 */
+.blinking{
+color: red;
+font-size: 10pt;
+font-weight: bold;
+-webkit-animation:blink 1.2s ease-in-out infinite alternate;
+-moz-animation:blink 1.2s ease-in-out infinite alternate;
+animation:blink 1.2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-moz-keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+.a {
+font-size: 10pt;
+color:;
+font-weight: bold;
+font-family: Meiryo;
+background-color: ;
+border-style:;
+border-color:;
+width: px;
+margin: 5px 0px 0px 5px;
+padding: 5px;
+}
+
+
+.b {
+font-size: 10pt;
+color:;
+font-weight: bold;
+font-family: Meiryo;
+background-color: ;
+border-style:;
+border-color:;
+width: px;
+margin: 0px 0px 0px 100px;
+padding: 5px;
+}
+
+
+
+.kousin {
+margin: 0px 0px 0px 100px;
+width: 80%;
+height: 10vh;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.50);
+}
+
+
+.naiyou {
+display : flex;
+}
+
+.hiduke {
+font-size: 10pt;
+color:;
+font-weight: bold;
+font-family: Meiryo;
+background-color: ;
+border-style:;
+border-color:;
+padding : 5px;
+display: inline-block;
+width: 7em;
+}
+.hiduke:before {content: "\25A0"; /* ■ */}
+
+.bun {
+position: relative;
+font-size: 10pt;
+color:;
+font-weight: bold;
+font-family: Meiryo;
+background-color:;
+border-style:;
+border-color:;
+padding: 5px;
+}
+
+
+.bun a:link { color: #898880; }/* 通常 */
+.bun a:visited { color: #898880; }/* 押した後 */
+.bun a:active { color: #898880; } /* クリック時 */
+.bun a:hover { color: red; } /* オンマウス時 */
+
+
+
+#iframe {
+position: absolute;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin: 20px 0px 0px 210px;
+width: 80%;
+height: 66%;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.50);
+}
+
+
+
+/*riyounasi*/
+#iframe-01 {
+margin: 0px 0px 0px 100px;
+width: 80%;
+max-height: 0.5625em;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.50);
+}
+
+
+/*googlekensaku*/
+.g {
+margin: -2.5em 0px 0px 5em;
+}
+
+.g1 {
+font-size: 15px;
+height: 30px;
+text-align:;
+ime-mode: active;
+padding-left: 20px;
+}
+
+
+.g2 {
+font-family: みつバッチフォント; 
+background-color: transparent;
+border: 2px solid red;
+color: red; !important;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all .3s;
+transition: all .3s;
+}
+  
+.g2:hover {
+background-color: red;
+border: 2px solid red;
+color: #fff !important;
+border-radius: 30px;
+}
+/*kokomade*/
+  
+
+
+/*topnoaicon*/
+.fas {
+position:fixed;
+right: 50px;
+font-family: "Font Awesome 5 Free","モフ字";
+font-weight: 900;
+font-size: 1.5em;/*サイズ*/
+color: #ff938b; /*アイコン色*/
+padding: 0rem 1rem 0rem 1rem;
+}
+
+.fa-home:hover {
+color: red;
+text-decoration: underline;
+}
+/*kokomade*/
+
+
+/*kakumenu*/
+.midasi,.midasi span {
+display: inline-block;
+color:;/* #ff938b*/
+font-family:;/* モフ字*/
+font-size:;/* 2rem*/
+font-weight:;/* 900*/
+margin: 5px 0px 0px 0px;
+background:;/* #fff*/
+padding:;/* 0 1rem*/
+}
+
+.midasi span {
+transition: .9s;
+}
+
+.midasi:hover span {
+transform: rotateX(360deg);
+background: #fff;
+color: red;
+}
+/*kokomade*/
+
+
+
+
+/*accordion*/
+#accordion-panel {
+margin: 1.1em 0 0 0;
+}
+
+#accordion-panel dt {
+cursor: pointer;
+font-family: meiryo;
+font-weight: bold;
+margin: 10px 0px 0px 5px; /*bottom spacing between header and rest of content*/
+padding: 4px 0 4px 10px; /*header text is indented 10px*/
+width: 180px;
+}
+
+#accordion-panel dd {
+display: none;
+}
+
+
+
+.layer-a dt {
+font-size: 15px;
+background-color: #ef857d;
+color: white;
+margin: 0;
+padding: 0;
+margin-bottom: 80px;
+
+}
+
+
+
+.layer-b dt {
+background-color: white;
+font-size: 1.0em;
+font-size: 13px;
+font-weight:bold;
+border-bottom: 1px solid #dadada;
+color: #dadada;
+}
+
+.layer-b dt a {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+
+
+.layer-2 dt {
+background-color: white;
+font-size: 1.0em;
+font-family: Meiryo;
+font-weight:bold;
+border-bottom: 1px solid #898880;
+color: #898880;
+}
+
+.layer-2 dt:hover {
+background-color: #ffd700;
+color: #898880;
+}
+
+
+
+.layer-3 dt {
+background-color: #696969;
+font-size: 1.0em;
+font-family: Meiryo;
+font-weight: bold;
+border-bottom: 1px solid #696969;
+color: #fff;
+}
+
+.layer-3 dt a {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+.layer-3 dt:hover {
+background-color: black;
+color: #fff;
+
+}
+
+
+
+.layer-4 dt {
+background-color: white;
+font-size: 1.0em;
+font-family: Meiryo;
+font-weight:bold;
+border-bottom: 1px solid #898880;
+color: #898880;
+}
+
+.layer-4 dt a {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+.layer-4 dt:hover {
+background-color: red;
+color: #fff;
+}
+
+
+.layer-4 a:active { color: #fff; } /* クリック時 */
+.layer-4 a:hover { color: #fff; } /* オンマウス時 */
+
+
+.s-tbl dt:hover {
+background: #fff;/* #ffd700 */
+}
+
+
+.s-tbl  a:link{ color: #898880; }/* 通常 */
+.s-tbl a:visited { color: #898880; }/* 押した後 */
+.s-tbl a:active { color: #898880; } /* クリック時 */
+.s-tbl a:hover { color: red; } /* オンマウス時 */
+
+
+/*下記内容未設定*/
+.s-tbl2 dt:hover {
+background: #ffd700;
+
+}
+
+.s-tbl2 a:link{ color: red; }
+.s-tbl2 a:visited { color: red; }
+.s-tbl2 a:active { color: #fff; } /* クリック時 */
+.s-tbl2 a:hover { color: #fff; } /* オンマウス時 */
+
+
+
+.s-tbl3 dt:hover {
+background: #ffd700;
+}
+
+.s-tbl3 a:link{ color: #898880; }
+.s-tbl3 a:visited { color: #898880; }
+.s-tbl3 a:active { color: #898880; } /* クリック時 */
+.s-tbl3 a:hover { color: #898880; } /* オンマウス時 */
+/*ここまで*/
+
+
+
+
+
+
+
+/*yobi
+
+.btn-brackets {
+display: inline-block;
+position: relative;
+padding: 0.5em 1em;
+text-decoration: none;
+color: #000;
+transition: .4s;
+}
+.btn-brackets:hover {
+color:#ff7f7f;
+}
+.btn-brackets:before, .btn-brackets:after {
+position: absolute;
+top: 0;
+content:'';
+width: 8px;
+height: 100%;
+display: inline-block;
+}
+.btn-brackets:before {
+border-left: solid 1px #ff7f7f;
+border-top: solid 1px #ff7f7f;
+border-bottom: solid 1px #ff7f7f;
+left: 0;
+}
+.btn-brackets:after {
+content: '';
+border-top: solid 1px #ff7f7f;
+border-right: solid 1px #ff7f7f;
+border-bottom: solid 1px #ff7f7f;
+right: 0;
+}
+
+-------------------------
+
+.home {
+position: absolute;
+font-family: "Font Awesome 5 Free","モフ字";
+font-weight: 900;
+content: '\f015とっぷ';/*アイコンのユニコード*/
+font-size: 1.5em;/*サイズ*/
+color: #ff938b; /*アイコン色*/
+padding: 0rem 1rem;
+faa-parent animated-hover;
+far fa-hand-paper faa-wrench fa-lg;
+}
+
+
+
+@-webkit-keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes blink{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+*/
+
+
+
+
+
+
+
