@@ -81,7 +81,10 @@ padding : 5px;
 display: inline-block;
 width: 7em;
 }
-.hiduke:before {"\25A0"; /* ■ */}
+.hiduke:before {
+  "\25A0"; /* ■ */
+  font-family: "Segoe UI Symbol", "Arial Unicode MS", sans-serif;
+}
 
 .bun {
 position: relative;
@@ -421,6 +424,7 @@ far fa-hand-paper faa-wrench fa-lg;
 100% {opacity:1;}
 }
 */
+
 
 
 
