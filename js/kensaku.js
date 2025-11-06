@@ -1,28 +1,6 @@
 ﻿var List=[
 ['▲google','http://www.google.co.jp/' ],
-['▲ヤマダデンキの社員なのか','../../4.denki management/syain/1.html' ],
-['▲シフト','../../ほかん-taiyou.denki-/sift/7.html' ],
-['▲会員 携帯アプリ','kaiin/keitai/keitai.html' ],
-['▲メルマガ(メール配信内容)','kensyu/rule/merumaga/mail.html' ],
-['▲メルマガ(アプリから配信停止方法)','kensyu/rule/merumaga/teisi.html' ],
-['▲メルマガ(トークスクリプト)','kensyu/rule/merumaga/talk.html' ],
-['▲Q&A','kensyu/rule/yd/q&a.html' ],
-['▲ヤマダのでんきトークスクリプト','kensyu/rule/yd/talk.html' ],
-['▲解約トークスクリプト','kensyu/econo-crea/7/talkkai.html' ],
-['▲他社乗り換えトークスクリプト(発信)','kensyu/econo-crea/7/talknori.html' ],
-['▲アンペア数変更トークスクリプト','kensyu/econo-crea/6/talk.html' ],
-['▲スイッチングエラー-トークスクリプト-(発信)','kensyu/econo-crea/3/talk.html' ],
-['▲身だしなみ 派遣社員','syuchi/data/pdf/身だしなみ 派遣社員.pdf' ],
-['▲口座振替システム-確認操作方法-','../../4.denki management/kouza/★.html' ],
-['▲ラベル作成方法','../../4.denki management/label/0.html' ],
-['▲申込書手引き','../../../※※共有※※使ってね。/申し込みの手引き原本' ],
-['▲花本データ','../../../../▲ヤマダのでんき▲/花本祥子発信依頼分-データ-' ],
-['▲寒河江データ','../../../../▲ヤマダのでんき▲/寒河江データ' ],
-['▲発信管理表','../../4.denki management/excel/発信管理表.xlsm' ],
-['▲研修スケジュール','../../4.denki management/training/training schedule.xlsx' ],
-['▲ECONO-CREA(econo-crea)','https://htbenergy-portal.econo-crea.com/absClient/' ],
-['▲YaESS(yaess)','http://menu.yairmobile.jp:8080/YmdRetailElectric/login' ],
-['▲全体webマニュアル','http://filesv-o04:9000/' ],
+['▲','../../html' ]
 ];
 
 function chk() {
@@ -72,4 +50,5 @@ $(document).keypress(function(e){
   if (e.key === 'Enter') {
     return false;
   }
+
 });
