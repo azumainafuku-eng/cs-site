@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/a.css">
+
+<title>周知</title>
+
+<style>
+   .section-content {
+    white-space: pre-wrap;
+    line-height: 1.8;
+    color: #555;
+  }
+</style>
+</head>
+
+
+
+<body>
+<p id="page-top">
+<a href="#wrap">PAGE TOP</a></p>
+
+
+<input type="text" id="input" value="" style="ime-mode:active;" placeholder="検索">
+<input type="reset" id="clear" value="reset" class="reset flat border">
+
+<table class="table1" id='TABLE1'>
+<!---------------------------ここから上はさわらない！！--------------------------->
+
+
+<!--●●周知(コピー)はここからcopy●●-->
+<tr>
+<td>
+<div class="midasi">【MTG内容共有】</div>
+<div class="hiduke">★2025/11/5★</div>
+<!--本文ここから-->
+<div class="section-content">①ロール紙の注文履歴
+　ロール紙の注文がWEBになり、注文できてますか？と質問があった際は、<a href="https://docs.google.com/spreadsheets/d/1Psheb2DXAHf2dm5jLPaVDrgpRXhCdzxZRiQ1inrxi1A/edit?gid=526043431#gid=526043431" target="_blank">受注内容</a>のSS見て確認お願いします。
+　お客様から注文した履歴が見たい。と言われたら、申し込みに自動返信メールが届くので、確認するように伝えてください。（※迷惑メールも確認してください。）
+
+②Chat GPTの有償プランについて
+  <a href="https://drive.google.com/file/d/1BGJ0qMzsL1s0sF1cwdVduBE98RyCSKOK/view?usp=drive_link" target="_blank">添付PDF見本：チャットGPT申請見本</a>
+・予算（472）
+・16日前後に経費申請を各自行う。
+
+追記：有償プランですが、12月に正式発表となりますが、有償使用してる方は解約となるそうです！！
+グーグルのGeminiのPro契約してるので今後そちらを使用してください！とのことでした。よろしくお願いします。
+<img src="g/emini.png" alt="gemini" width="200">
+
+③メールの問い合わせ・お問い合わせフォームに関して
+  稲福さんが作成してくれた<a href="https://docs.google.com/spreadsheets/d/1fBGAhNhdOm6m5QbzY-N_1RgzUcuJQlTqkkEtHdFyvms/edit?gid=91650302#gid=91650302" target="_blank">受電のSS</a>に入力してください。
+  A～D列・内容はL列　その他は入力しなくて大丈夫です。
+  サポセンでクローズする案件は入力不要です。
+  目的：振り分けた先の対応漏れ防止
+
+④活動履歴について
+  お問い合わせフォーム・SSL・メール対応・フォローメールに関して活動履歴を入力してますが、開始・終了日時に関しては、問い合わせが来た日時の入力を忘れないでください！
+
+⑤2,200円の運用保守について
+  運用保守が入ってることがわからず対応してしまった等があると思うので、追加制作に下記のように39件入力したいと思います。
+  事例：<a href="https://genova.my.salesforce.com/a0BRB00000bKsF3" target="_blank">https://genova.my.salesforce.com/a0BRB00000bKsF3</a>
+  8人で振り分けますので、本日中に振り分けの共有をします。
+  この方法以外に、何か案があれば昼礼時に意見ほしいです。
+  月末に件数が増えてないか確認して、増えていたら入力する担当を1名決めたいです。
+
+⑥SSとSFの連携のアクセス権が制限されてるので、本日板橋さんがまとめて情シス申請をします。
+
+⑦面談は、毎月10日までに全員終わらせる。スマートHRも10日まで。
+
+⑧リスティング広告受注した案件で、他社のHPへのGoogle tag manager実装を依頼された場合、
+  AIのバナーのように、書類巻いて費用いただいて対応できるかどうかサーバー課に確認予定となります。（※昨日CP部から質問があったため。）
+
+⑨報告が必要なタスクに関しては、全部期日を決めましょう。
+・放置・納品フォロメは、パワポにまとめて数字報告
+・サーバー勉強会
+
+<a class="slack-link" href="https://genova-inc.slack.com/archives/C05QQ38RQCD/p1762393340186429">Slack アプリで開く</a>
+</div>
+<!--本文ここからまで-->
+</tr>
+
+
+<!--●●周知(コピー)はここまでcopy●●-->
+
+
+
+</table>
+
+
+
+
+<script src="../js/a.js" type="text/javascript"></script>
+<script>
+  const TEAM_ID = "T0596SWTD8B"; // 固定
+
+  function webToSlackApp(webUrl) {
+    // C = public channel, D = DM, G = private group
+    const match = webUrl.match(/archives\/([CDG]\w+)\/p(\d+)/);
+    if (!match) return webUrl; // Slackリンクでない場合はそのまま
+
+    const channel = match[1];
+    const rawMessage = match[2];
+    const ts = rawMessage.substring(0,10) + "." + rawMessage.substring(10);
+
+    return `slack://channel?team=${TEAM_ID}&id=${channel}&message=${ts}`;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a.slack-link").forEach(a => {
+      a.href = webToSlackApp(a.href);
+      a.setAttribute("target", "_self"); // 新しいタブではなく同じタブで開く
+    });
+  });
+</script>
+
+</body>
+</html>
