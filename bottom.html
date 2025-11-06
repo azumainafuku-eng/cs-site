@@ -219,25 +219,16 @@ display: none;
 </dd>
 
 </div>
-</body>
-</html>
 
 
 
 <script>
-
-
-
 $(function(){
-
 var ap = $('#accordion-panel');
-
 ap.find('dt').on('click', function(){
 var flag = $(this).next('dd').is(":hidden");
-
 $(this).siblings('dd').slideUp();/* 同階層の dd 要素を非表示 */
 $(this).siblings('dd').find('dd','dt').slideUp();/* 同階層の dd 要素以下の dd 要素を非表示*/
-
 if (flag) {
 $(this).next('dd').slideDown();
 } else {
@@ -246,14 +237,10 @@ $(this).next('dd').slideUp();
 });
 });
 
-
-
 $('dt').hover(function() {
     over_flg = true;
   }, function() {
     over_flg = false;
-
-
 $('html').click(function(e) {
 if (over_flg == false) {
 $('dd').slideUp('fast');
@@ -274,4 +261,5 @@ document.getElementById('iframe').addEventListener('load', function() {
   </div>
 </body>
 </html>
+
 
